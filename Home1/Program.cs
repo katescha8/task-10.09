@@ -83,29 +83,93 @@ namespace Home1
             Console.WriteLine("     Труд");
             Console.WriteLine("           Май");*/
 
-            /*???????????Console.WriteLine("Задание 11");
+            /*Console.WriteLine("Задание 11");
+            Console.Write("Вы хотите ввести целое число(введите ц) или дробное(введите д)? ");
+            char ch1 = Convert.ToChar(Console.ReadLine());
+            if (ch1 == 'ц')
+            {
             B1:
-            Console.Write("Введите первое число ");
-            var n1 = Convert.ToChar(Console.ReadLine());
-            if(Char.IsAscii(n1))
-            {
-                Console.WriteLine("Неверный ввод");
-                goto B1;
+                Console.Write("Введите первое число ");
+                string n11 = Console.ReadLine();
+                string n12 = new string(n11.Where(t => char.IsDigit(t)).ToArray());
+                if (n12 == "")
+                { Console.WriteLine("Нет цифр, введите заново"); goto B1; }
+                double n1 = Convert.ToDouble(n12);
+                Console.Write("Вы хотите ввести целое число(введите ц) или дробное(введите д)? ");
+                char ch2 = Convert.ToChar(Console.ReadLine());
+                if (ch2 == 'ц')
+                {
+                B2:
+                    Console.Write("Введите второе число ");
+                    string n21 = Console.ReadLine();
+                    string n22 = new string(n21.Where(t => char.IsDigit(t)).ToArray());
+                    if (n22 == "")
+                    { Console.WriteLine("Нет цифр, введите заново"); goto B2; }
+                    double n2 = Convert.ToDouble(n22);
+                    double n = n1;
+                    n1 = n2;
+                    n2 = n;
+                    Console.WriteLine($"Первое число {n1}, Второе число {n2}");
+                }
+                else
+                {
+                B3:
+                    Console.Write("Введите второе число ");
+                    string n21 = Console.ReadLine();
+                    string n22 = new string(n21.Where(t => char.IsDigit(t) || char.IsPunctuation(t)).ToArray());
+                    n22 = n22.Replace(".", ",");
+                    if (n22 == "")
+                    { Console.WriteLine("Нет цифр, введите заново"); goto B3; }
+                    double n2 = Convert.ToDouble(n22);
+                    double n = n1;
+                    n1 = n2;
+                    n2 = n;
+                    Console.WriteLine($"Первое число {n1}, Второе число {n2}");
+                }
             }
-            var n11 = Convert.ToDouble(n1);
-            B2:
-            Console.Write("Введите второе число ");
-            var n2 = Convert.ToChar(Console.ReadLine());
-            if (Char.IsAscii(n2))
+            else
             {
-                Console.WriteLine("Неверный ввод");
-                goto B2;
+            B4:
+                Console.Write("Введите первое число ");
+                string n11 = Console.ReadLine();
+                string n12 = new string(n11.Where(t => char.IsDigit(t) || char.IsPunctuation(t)).ToArray());
+                n12 = n12.Replace(".", ",");
+                if (n12 == "")
+                { Console.WriteLine("Нет цифр, введите заново"); goto B4; }
+                double n1 = Convert.ToDouble(n12);
+                Console.Write("Вы хотите ввести целое число(введите ц) или дробное(введите д)? ");
+                char ch2 = Convert.ToChar(Console.ReadLine());
+                if (ch2 == 'ц')
+                {
+                B2:
+                    Console.Write("Введите второе число ");
+                    string n21 = Console.ReadLine();
+                    string n22 = new string(n21.Where(t => char.IsDigit(t)).ToArray());
+                    if (n22 == "")
+                    { Console.WriteLine("Нет цифр, введите заново"); goto B2; }
+                    double n2 = Convert.ToDouble(n22);
+                    double n = n1;
+                    n1 = n2;
+                    n2 = n;
+                    Console.WriteLine($"Первое число {n1}, Второе число {n2}");
+                }
+                else
+                {
+                B3:
+                    Console.Write("Введите второе число ");
+                    string n21 = Console.ReadLine();
+                    string n22 = new string(n21.Where(t => char.IsDigit(t) || char.IsPunctuation(t)).ToArray());
+                    n22 = n22.Replace(".", ",");
+                    if (n22 == "")
+                    { Console.WriteLine("Нет цифр, введите заново"); goto B3; }
+                    double n2 = Convert.ToDouble(n22);
+                    double n = n1;
+                    n1 = n2;
+                    n2 = n;
+                    Console.WriteLine($"Первое число {n1}, Второе число {n2}");
+                }
             }
-            var n22 = Convert.ToDouble(n2);
-            double n = n11;
-            n11 = n22;
-            n22 = n;
-            Console.WriteLine($"Первое число {n11}, Второе число {n22}");*/
+            */
 
             /*Console.WriteLine("Задание 12");
             Console.Write("Выберите фигуру: (треугольник(введите т), четырехугольник(введите ч), круг)(введите к): ");
