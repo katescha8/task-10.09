@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Home1
 {
@@ -428,7 +431,7 @@ namespace Home1
                 }
             }
             Console.WriteLine($"У числа {n} {j} делителей ");*/
-            
+
             /*Console.WriteLine("Задание 31");
             Console.Write("Введите а ");
             double a = Convert.ToDouble(Console.ReadLine());
@@ -516,7 +519,7 @@ namespace Home1
             {
                 Console.WriteLine("НЕ видать вам кредита!");
             }
-            */ 
+            */
 
             /*Console.WriteLine("Задание 34.1");
             Console.Write("Введите имя ");
@@ -527,10 +530,68 @@ namespace Home1
             Console.Write("Введите имя ");
             Console.Write("Здравствуйте, " + Console.ReadLine());*/
 
-            //Console.WriteLine("Задание 35");
+            /*Console.WriteLine("Задание 35");
+            Console.WriteLine("Чтобы начать, напишите приветсвие ");
+            string s1 = Console.ReadLine();
+            Console.WriteLine("Как тебя зовут? ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Привет, "+ name);
+            string s2 = Console.ReadLine();
+            Console.WriteLine("Да");
+            string s3 = Console.ReadLine();
+            Console.WriteLine("Нет");
+            Thread.Sleep(5000);
+            Console.WriteLine("Но могу показать");
+            Random color = new Random();
+            int c = color.Next(1, 15);
+            Console.WriteLine(c);
+            ConsoleColor color1 = (ConsoleColor)c;
+            Console.BackgroundColor = color1;
+            Console.Clear();*/
 
+            /*Console.WriteLine("Задание 36.1");
+            Random r = new Random();
+            int n1 = r.Next(10);
+            int n2 = r.Next(10);
+            int n3 = r.Next(10);
+            int n4 = r.Next(10);
+            int n5 = r.Next(10);
+            int n6 = r.Next(10);
+            int n7 = r.Next(10);
+            int n8 = r.Next(10);
+            int n9 = r.Next(10);
+            int n10 = r.Next(10);
+            int n11 = r.Next(10);
+            int n12 = r.Next(10);
+            int m1 = n2 + n4 + n6 + n8 + n10 + n12;
+            int m2 = m1 * 3;
+            int m3 = n1 + n3 + n5 + n7 + n9 + n11;
+            int m4 = m2 + m3;
+            int m5 = m4 % 10;
+            int m = 10 - m5;
+            Console.WriteLine($"Контрольная цифра штрихкода {n1}{n2}{n3}{n4}{n5}{n6}{n7}{n8}{n9}{n10}{n11}{n12} равна {m}");*/
 
-            /*Console.WriteLine("Задание 36");*/
+            /*Console.WriteLine("Задание 36.2");
+            Console.WriteLine("Введите число по цифрам ");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            int n2 = Convert.ToInt32(Console.ReadLine());   
+            int n3 = Convert.ToInt32(Console.ReadLine());
+            int n4 = Convert.ToInt32(Console.ReadLine());
+            int n5 = Convert.ToInt32(Console.ReadLine());
+            int n6 = Convert.ToInt32(Console.ReadLine());
+            int n7 = Convert.ToInt32(Console.ReadLine());
+            int n8 = Convert.ToInt32(Console.ReadLine());
+            int n9 = Convert.ToInt32(Console.ReadLine());
+            int n10 = Convert.ToInt32(Console.ReadLine());
+            int n11 = Convert.ToInt32(Console.ReadLine());
+            int n12= Convert.ToInt32(Console.ReadLine());
+            int m1 = n2 + n4 + n6 + n8 + n10 + n12;
+            int m2 = m1 * 3;
+            int m3 = n1 + n3 + n5 + n7 + n9 + n11;
+            int m4 = m2 + m3;
+            int m5 = m4 % 10;
+            int m = 10 - m5;
+            Console.WriteLine($"Контрольная цифра штрихкода {n1}{n2}{n3}{n4}{n5}{n6}{n7}{n8}{n9}{n10}{n11}{n12} равна {m}");*/
         }
     }
 }
